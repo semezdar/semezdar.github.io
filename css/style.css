@@ -15,10 +15,6 @@ p {
   line-height: normal;
 }
 
-img {
-  width: 250px;
-}
-
 .navigation {
   list-style-type: none;
   margin: 0;
@@ -32,4 +28,29 @@ img {
   padding: 0px 5px 0px 5px;
   margin: 4px;
   outline: 1px burlywood solid;
+}
+
+#image-list {
+  background-color: lightsteelblue;
+}
+
+#image-list img {
+  margin: 1%;
+  width: 14.2%;
+  box-shadow: rgba(0, 0, 0, 0.4) 2px 2px 4px;
+}
+
+.container {
+  display: inline-block;
+}
+
+.container label {
+  display: block;
+}
+
+.container input {
+}
+
+.selections label {
+  display: inline;
 }

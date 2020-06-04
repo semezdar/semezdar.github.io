@@ -3,23 +3,66 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.css" />
     <title>Test One</title>
   </head>
   <body>
     <ul class="navigation">
-      <li><a href="/">Home</a></li>
+      <li><a href="../index.html">Home</a></li>
       <li><a href="test1.html">Test One</a></li>
       <li><a href="about.html">About</a></li>
     </ul>
 
-    <h1>Test One</h1>
+    <div class="container">
+      <form>
+        <fieldset>
+          <legend>Személyes információ</legend>
+          <div>
+            <label for="name">Név:</label>
+            <input id="name" name="name" type="text" required />
+          </div>
+          <div>
+            <label for="email">Email cím:</label>
+            <input id="email" name="email" type="email" required />
+          </div>
+          <div>
+            <label for="adress">Cím:</label>
+            <input id="adress" name="adress" type="text" required />
+          </div>
+        </fieldset>
 
-    <h3>Testing stuff</h3>
-    <p>All kinds of stuff</p>
-    
-    <h3>Really, just a test</h3>
-    <p>Hello.</p>
-    
+        <div>
+          <label for="comment">Megjegyzés:</label>
+          <textarea id="comment" name="comment" type="comment"></textarea>
+        </div>
+        
+        <div class="selections">
+          <div>
+            <label>Option 1</label>
+            <input type="radio" name="option">
+          </div>
+          <div>
+            <label>Option 2</label>
+            <input type="radio" name="option">
+          </div>
+          <div>
+            <label>Option 3</label>
+            <input type="radio" name="option">
+          </div>
+        </div>
+
+        <div>
+          <select name="selection" id="test-selection">
+            <option value="sel1">Selection 1</option>
+            <option value="sel2">Selection 2</option>
+            <option value="sel3">Selection 3</option>
+          </select>
+        </div>
+
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
   </body>
 </html>
